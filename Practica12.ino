@@ -26,7 +26,7 @@ void loop(){
     Serial.println(s);
     Serial.print("String t: ");
     Serial.println(t);
-    Sreial.print("resultado: ");
+    Serial.print("resultado: ");
     bool res = Strinit(s,t);
     Serial.println(res);
 }
