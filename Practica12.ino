@@ -1,4 +1,3 @@
-
 bool Strinit(char *s, char *t){
     bool resultado = true;
     int i = 0;
@@ -14,10 +13,20 @@ bool Strinit(char *s, char *t){
     return resultado;
 }
 
-void setup(){
+char s[] = "holaCaracola";
+char t[] = "hola";
 
+void setup(){
+    Serial.begin(9600);
+    delay(10);
 }
 
 void loop(){
-
+    Serial.print("String s: ");
+    Serial.println(s);
+    Serial.print("String t: ");
+    Serial.println(t);
+    Sreial.print("resultado: ");
+    bool res = Strinit(s,t);
+    Serial.println(res);
 }
